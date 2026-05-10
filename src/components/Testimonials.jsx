@@ -8,7 +8,7 @@ const testimonials = [
     name: "Rachel Bennett",
     title: "Strategy Director",
     avatar:
-      "https://api.dicebear.com/7.x/personas/svg?seed=Rachel&backgroundColor=b6e3f4",
+      "/public/image1.png",
     featured: false,
   },
   {
@@ -18,7 +18,7 @@ const testimonials = [
     name: "Daniel Morgan",
     title: "Chief Innovation Officer",
     avatar:
-      "https://api.dicebear.com/7.x/personas/svg?seed=Daniel&backgroundColor=c0aede",
+      "/public/image2.png",
     featured: true,
   },
   {
@@ -28,7 +28,7 @@ const testimonials = [
     name: "Emma Thompson",
     title: "Digital Lead",
     avatar:
-      "https://api.dicebear.com/7.x/personas/svg?seed=Emma&backgroundColor=ffd5dc",
+      "/public/image3.png",
     featured: false,
   },
 ];
