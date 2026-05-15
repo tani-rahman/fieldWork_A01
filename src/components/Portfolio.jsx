@@ -11,7 +11,7 @@ const portfolioData = [
     title: "Enterprise Transformation Initiative",
     year: "2024",
     image:
-      "/public/portfolio-3.webp",
+      "/portfolio-3.webp",
     desc:
       "Sed porttitor lectus nibh. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.",
     stat1: "+42%",
@@ -24,7 +24,7 @@ const portfolioData = [
     title: "Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.",
     year: "2024",
     image:
-      "/public/portfolio-7.webp",
+      "/portfolio-7.webp",
     desc:
       "Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.",
     stat1: "-35%",
@@ -37,7 +37,7 @@ const portfolioData = [
     title: "Cloud Migration & Infrastructure Modernization",
     year: "2023",
     image:
-      "/public/portfolio-9.webp",
+      "/portfolio-9.webp",
     desc:
       "Nulla porttitor accumsan tincidunt. Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.",
     stat1: "$2.4M",
@@ -50,7 +50,7 @@ const portfolioData = [
     title: "Global ERP System Integration",
     year: "2023",
     image:
-      "/public/portfolio-11.webp",
+      "/portfolio-11.webp",
     desc:
       "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.",
     stat1: "+58%",
