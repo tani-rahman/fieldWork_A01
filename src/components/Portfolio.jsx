@@ -328,7 +328,6 @@ export default function Portfolio() {
           </p>
         </div>
 
-        {/* Filter Buttons */}
         <div className="filter-buttons">
           <button className="filter-btn active">All Projects</button>
           <button className="filter-btn">Consulting</button>
@@ -337,11 +336,10 @@ export default function Portfolio() {
           <button className="filter-btn">Enterprise Solutions</button>
         </div>
 
-        {/* Portfolio Cards */}
         <div className="portfolio-grid">
           {portfolioData.map((item, index) => (
             <div className="portfolio-card" key={index}>
-              {/* Image */}
+             
               <div className="portfolio-image">
                 <img src={item.image} alt={item.title} />
 
@@ -350,7 +348,6 @@ export default function Portfolio() {
                 </div>
               </div>
 
-              {/* Content */}
               <div className="portfolio-content">
                 <div className="title-row">
                   <h3>{item.title}</h3>
@@ -360,9 +357,7 @@ export default function Portfolio() {
 
                 <p className="description">{item.desc}</p>
 
-                {/* Footer */}
                 <div className="portfolio-footer">
-                  {/* Stats */}
                   <div className="stats">
                     <div className="stat">
                       <small>{item.stat1Label}</small>
@@ -375,7 +370,6 @@ export default function Portfolio() {
                     </div>
                   </div>
 
-                  {/* Buttons */}
                   <div className="buttons">
                     <button className="portfolio-btn">
                       <FaEye />
