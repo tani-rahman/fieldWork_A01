@@ -8,7 +8,7 @@ const testimonials = [
     name: "Rachel Bennett",
     title: "Strategy Director",
     avatar:
-      "/public/image1.png",
+      "/image1.png",
     featured: false,
   },
   {
@@ -18,7 +18,7 @@ const testimonials = [
     name: "Daniel Morgan",
     title: "Chief Innovation Officer",
     avatar:
-      "/public/image2.png",
+      "/image2.png",
     featured: true,
   },
   {
@@ -28,7 +28,7 @@ const testimonials = [
     name: "Emma Thompson",
     title: "Digital Lead",
     avatar:
-      "/public/image3.png",
+      "/image3.png",
     featured: false,
   },
 ];
@@ -138,7 +138,7 @@ export default function Testimonials() {
           </p>
         </div>
 
-        {/* Grid */}
+    
         <div className="grid gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((t) => (
             <TestimonialCard key={t.id} testimonial={t} />
