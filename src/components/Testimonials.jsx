@@ -31,6 +31,36 @@ const testimonials = [
       "/image3.png",
     featured: false,
   },
+  {
+    id: 4,
+    stars: 5,
+    text: "Implementing innovative strategies has revolutionized our approach to market challenges and competitive positioning.",
+    name: "Rachel Bennett",
+    title: "Strategy Director",
+    avatar:
+      "/image3.png",
+    featured: false,
+  },
+  {
+    id: 5,
+    stars: 5,
+    text: "Exceptional service delivery and innovative solutions have transformed our business operations.",
+    name: "Daniel Morgan",
+    title: "Chief Innovation Officer",
+    avatar:
+      "/image2.png",
+    featured: true,
+  },
+  {
+    id: 6,
+    stars: 5,
+    text: "Strategic partnership has enabled seamless digital transformation and operational excellence.",
+    name: "Emma Thompson",
+    title: "Digital Lead",
+    avatar:
+      "/image3.png",
+    featured: false,
+  },
 ];
 
 const Stars = ({ count }) => (
@@ -49,12 +79,16 @@ const Stars = ({ count }) => (
 const TestimonialCard = ({ testimonial }) => {
   return (
     <div
-      className={`relative p-6 rounded-xl border transition-all duration-300 bg-white hover:-translate-y-1 ${
-        testimonial.featured
-          ? "border-blue-500 shadow-md"
-          : "border-gray-200 shadow-sm"
-      }`}
-    >
+  className={`relative p-6 rounded-xl border transition-all duration-300 hover:-translate-y-1 ${
+    testimonial.featured
+      ? "border-blue-500 shadow-md"
+      : "border-gray-200 shadow-sm"
+  } ${
+    testimonial.id === 2 || testimonial.id === 5
+      ? "bg-blue-50"
+      : "bg-white"
+  }`}
+  >
       {testimonial.featured && (
         <div className="absolute top-3 right-3 bg-blue-500 text-white text-xs px-2 py-1 rounded">
           Featured
@@ -138,7 +172,7 @@ export default function Testimonials() {
           </p>
         </div>
 
-    
+        {/* Grid */}
         <div className="grid gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((t) => (
             <TestimonialCard key={t.id} testimonial={t} />
